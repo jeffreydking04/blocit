@@ -1,0 +1,7 @@
+<h1>All Advertisements</h1>
+
+<% @advertisements.each do |ad| %>
+  <h3><%= link_to ad.title, ad %></h3>
+  <p><%= ad.body %></p>
+  <p><%= number_to_currency(ad.price) %></p>
+<% end %>
